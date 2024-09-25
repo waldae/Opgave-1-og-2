@@ -34,11 +34,11 @@ using System.Threading.Tasks;
 //Besvarelsen på opgave 1 + 2 skal lægges i et GitHub repository.
 
 
-public class TrophyRepository
+public class TrophiesRepository
 {
     private List<Trophy> trophies;
 
-    public TrophyRepository()
+    public TrophiesRepository()
     {
         trophies = new List<Trophy>();
         // Insert at least 5 Trophy objects into the list

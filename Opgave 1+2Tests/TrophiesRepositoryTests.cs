@@ -1,12 +1,12 @@
 ﻿[TestClass()]
-public class TrophyRepositoryTests
+public class TrophiesRepositoryTests
 {
 
     [TestMethod()]
     public void GetTestFilterByYear()
     {
         // Arrange
-        var repository = new TrophyRepository();
+        var repository = new TrophiesRepository();
         var expectedYear = 2020;
         repository.AddTrophy(new Trophy { Competition = "Competition1", Year = expectedYear });
         repository.AddTrophy(new Trophy { Competition = "Competition2", Year = 2021 });
@@ -31,7 +31,7 @@ public class TrophyRepositoryTests
             Year = 2001
         };
 
-        TrophyRepository trophyRepository = new TrophyRepository();
+        TrophiesRepository trophyRepository = new TrophiesRepository();
         trophyRepository.AddTrophy(trophy);
 
         // Act
@@ -47,7 +47,7 @@ public class TrophyRepositoryTests
     public void UpdateTest()
     {
         // Arrange
-        var repository = new TrophyRepository();
+        var repository = new TrophiesRepository();
         var originalTrophy = new Trophy { Competition = "Original Competition", Year = 2020 };
         repository.AddTrophy(originalTrophy);
         var updatedValues = new Trophy { Competition = "Updated Competition", Year = 2021 };
